@@ -1,0 +1,7 @@
+last_update_check: 1550584404
+provisioning:
+    folder_name: provisioning
+docker:
+    compose_filename: docker-compose.yml
+    network_name: ahmedezplatformtest
+    network_prefix_port: 42
