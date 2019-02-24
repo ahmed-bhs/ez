@@ -1,3 +1,18 @@
+imports:
+    - { resource: content_views.yml }
+    - { resource: image_variations.yml }
+
+ezdesign:
+    design_list:
+        site_design: [site_theme]
+#    phpstorm:
+#
+#        # Activates PHPStorm support
+#        enabled:              '%kernel.debug%'
+#
+#        # Path where to store PHPStorm configuration file for additional Twig namespaces (ide-twig.json).
+#        twig_config_path:     '%kernel.root_dir%/..'
+
 ezpublish:
     # HttpCache settings, By default 'local' (Symfony HttpCache Proxy), by setting it to 'http' you can point it to Varnish
     http_cache:
@@ -28,6 +43,7 @@ ezpublish:
     # System settings, grouped by siteaccess and/or siteaccess group
     system:
         site_group:
+
             # Cache pool service, needs to be different per repository (database) on multi repository install.
             cache_service_name: '%cache_pool%'
             # These reflect the current installers, complete installation before you change them. For changing var_dir
@@ -46,12 +62,6 @@ ezpublish:
             http_cache:
                 purge_servers: ['%purge_server%']
     # This tells eZ Platform to use the template when rendering content with Location ID 2 (the default location for the root Content item)
-            content_view:
-                full:
-                    home_page:
-                        template: 'full/home_page.html.twig'
-                        match:
-                            Id\Location: 2
 
         # WARNING: Do not remove or rename this group.
         admin_group:

@@ -1,0 +1,39 @@
+ezpublish:
+    system:
+        site_group:
+            design: site_design
+
+            content_view:
+                full:
+                    homepage:
+                        template: "@ezdesign/full/homepage.html.twig"
+                        match:
+                            Id\Location: 2
+
+                    ride:
+                        template: '@ezdesign/full/ride.html.twig'
+                        controller: 'AppBundle:Ride:viewRideWithLandmarks'
+                        match:
+                            Identifier\ContentType: 'ride'
+
+                    contact:
+                        controller: "AppBundle:Contact:fullView"
+                        template: "@ezdesign/full/contact.html.twig"
+                        match:
+                            Identifier\ContentType: contact
+
+                line:
+                    ride:
+                        template: '@ezdesign/line/ride.html.twig'
+                        match:
+                            Identifier\ContentType: 'ride'
+
+                    landmark:
+                        template: '@ezdesign/line/landmark.html.twig'
+                        match:
+                            Identifier\ContentType: 'landmark'
+
+            user_registration:
+                templates:
+                    form: '@ezdesign/user/registration_form.html.twig'
+                    confirmation: '@ezdesign/user/registration_confirmation.html.twig'

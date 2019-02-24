@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "@symfony/webpack-encore": "^0.19.0"
+    "@symfony/webpack-encore": "^0.19.0",
+    "bootstrap": "3.3.5",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
   },
   "scripts": {
     "dev": "encore dev --watch",
@@ -8,6 +11,7 @@
   },
   "devDependencies": {
     "chmod": "^0.2.1",
+    "copy-webpack-plugin": "^4.0.0",
     "node-sass": "^4.11.0",
     "postcss-loader": "^3.0.0",
     "sass-loader": "^7.1.0"
