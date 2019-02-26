@@ -1,4 +1,4 @@
-{% extends "@ezdesign/base.html.twig" %}
+{% extends pagelayout %}
 
 {% block page_head %}
     {% set title = 'Register user'|trans %}
@@ -7,14 +7,17 @@
 {% endblock %}
 
 {% block content %}
-    {% import 'user/registration_content_form.html.twig' as registrationForm %}
+    {% import '@ezdesign/user/registration_content_form.html.twig' as registrationForm %}
 
-    <div class="container">
-        <section class="user-form col-md-6 col-md-offset-3">
-            <h2>{{ 'Member Registration'|trans }}</h2>
-            <div class="legend">* {{ 'All fields are required'|trans }}</div>
+    <section class="user-form-registration">
+        <div class="row form">
+            <div class="col-md-4 offset-md-4">
+                <h1>{{ 'Member Registration'|trans }}</h1>
+                <div class="legend">* {{ 'All fields are required'|trans }}</div>
 
-            {{ registrationForm.display_form(form) }}
-        </section>
-    </div>
+                {{ registrationForm.display_form(form) }}
+
+            </div>
+        </div>
+    </section>
 {% endblock %}

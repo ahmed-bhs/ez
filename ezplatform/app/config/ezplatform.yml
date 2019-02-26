@@ -1,5 +1,5 @@
 imports:
-    - { resource: content_views.yml }
+    - { resource: views.yml }
     - { resource: image_variations.yml }
 
 ezdesign:

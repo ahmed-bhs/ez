@@ -5,8 +5,8 @@ ezpublish:
 
             content_view:
                 full:
-                    homepage:
-                        template: "@ezdesign/full/homepage.html.twig"
+                    home:
+                        template: "@ezdesign/full/home.html.twig"
                         match:
                             Id\Location: 2
 
@@ -14,13 +14,17 @@ ezpublish:
                         template: '@ezdesign/full/ride.html.twig'
                         controller: 'AppBundle:Ride:viewRideWithLandmarks'
                         match:
-                            Identifier\ContentType: 'ride'
+                            Identifier\ContentType: [ride]
+                    ride_list:
+                        template: '@ezdesign/full/ride_list.html.twig'
+                        match:
+                            Identifier\ContentType: [folder]
 
                     contact:
-                        controller: "AppBundle:Contact:fullView"
-                        template: "@ezdesign/full/contact.html.twig"
+                        controller: 'app.controller.contactform:showContactFormAction'
+                        template: '@ezdesign/full/contact.html.twig'
                         match:
-                            Identifier\ContentType: contact
+                            Identifier\ContentType: [contact]
 
                 line:
                     ride:
@@ -32,6 +36,13 @@ ezpublish:
                         template: '@ezdesign/line/landmark.html.twig'
                         match:
                             Identifier\ContentType: 'landmark'
+                home:
+                    ride_list:
+                        template: '@ezdesign/list/rides.html.twig'
+                        controller: 'AppBundle:Ride:getAllRides'
+                        match:
+                            Identifier\ContentType: [folder]
+
 
             user_registration:
                 templates:

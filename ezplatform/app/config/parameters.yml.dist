@@ -15,3 +15,5 @@ parameters:
     env(DATABASE_NAME): ezplatform
     env(DATABASE_USER): root
     env(DATABASE_PASSWORD):
+    app.contact_form.sender_email: no-reply@codein.fr
+    app.contact_form.recipient_email: test@codein.fr

@@ -64,6 +64,7 @@
         "bex/behat-screenshot": "^1.2.7",
         "ezsystems/behat-screenshot-image-driver-cloudinary": "~1.0.0",
         "ezsystems/behatbundle": "~6.5.4",
+        "kaliop/ezmigrationbundle": "^5.8",
         "phpunit/phpunit": "^6.5.13",
         "sensio/generator-bundle": "^3.1.7",
         "symfony/phpunit-bridge": "^3.4.18"

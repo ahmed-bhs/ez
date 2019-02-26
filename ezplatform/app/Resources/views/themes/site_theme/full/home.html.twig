@@ -1,0 +1,28 @@
+{% extends '@ezdesign/base.html.twig' %}
+
+{% block page_head %}
+    {% set title = ez_content_name(content) ~ " - " ~ content.contentInfo.publishedDate|localizeddate('short', 'short', app.request.locale) %}
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="col-xs-10 col-xs-offset-1 text-justified">
+        {{ ez_render_field(content, 'name') }}
+
+        {{ ez_render_field(content, 'short_name') }}
+
+        {{ ez_render_field(content, 'short_description') }}
+        {{ ez_render_field(content, 'description') }}
+    </div>
+
+    <div class="col-xs-10 col-xs-offset-1 text-justified">
+        {{ render(controller('ez_content:viewAction', {
+            location: location,
+            viewType: 'home',
+            'params' : {
+                'page' : app.request.query.get('page') ?? 1
+            }}
+        )) }}
+    </div>
+{% endblock %}

@@ -50,7 +50,6 @@ class AppKernel extends Kernel
         ];
 
         switch ($this->getEnvironment()) {
-            case 'test':
             case 'behat':
                 $bundles[] = new EzSystems\BehatBundle\EzSystemsBehatBundle();
                 $bundles[] = new EzSystems\PlatformBehatBundle\EzPlatformBehatBundle();
@@ -62,6 +61,7 @@ class AppKernel extends Kernel
                 $bundles[] = new Symfony\Bundle\WebServerBundle\WebServerBundle();
                 $bundles[] = new Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
                 $bundles[] = new Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+                $bundles[] = new \Kaliop\eZMigrationBundle\EzMigrationBundle();
         }
 
         return $bundles;
