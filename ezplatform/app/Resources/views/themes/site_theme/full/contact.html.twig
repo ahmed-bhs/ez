@@ -1,4 +1,4 @@
-{% extends "@ezdesign/pagelayout.html.twig" %}
+{% extends "@ezdesign/base.html.twig" %}
 
 {% block page_head %}
     {% set title = ez_content_name(content) ~ " - " ~ content.contentInfo.publishedDate|localizeddate('short', 'short', app.request.locale) %}

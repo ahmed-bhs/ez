@@ -1,0 +1,75 @@
+-
+    type: content
+    mode: create
+    content_type: ride
+    parent_location: 54
+    priority: 0
+    is_hidden: false
+    sort_field: name
+    sort_order: ASC
+    remote_id: fd37a8e59ef86a07f531f10c6a906d1a
+    location_remote_id: 85e10909c191ad9851ae89e6ba67f13e
+    section: 1
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    modification_date: 1550928279
+    publication_date: 1550877351
+    always_available: true
+    attributes:
+        name: 'Ride number 1'
+        photo:
+            path: '/var/www/html/project/ezplatform/web/var/site/storage/images/6/8/1/0/186-2-eng-GB/Capture d’écran de 2018-11-09 18-16-28.png'
+            filename: 'Capture d’écran de 2018-11-09 18-16-28.png'
+            alternativeText: ''
+        description:
+            xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"><para>azd</para></section>\n"
+        starting_point:
+            latitude: 23.276553
+            longitude: 4.101559
+            address: Tunisai
+        ending_point:
+            latitude: 5.50765
+            longitude: 32.929684
+            address: France
+        length: 3
+        landmarks:
+            destinationContentIds:
+                - 57
+-
+    type: content
+    mode: create
+    content_type: ride
+    parent_location: 54
+    priority: 0
+    is_hidden: false
+    sort_field: published
+    sort_order: DESC
+    remote_id: fd219b4ab603854324cb8eed76376d3a
+    location_remote_id: 490812d8a14ffe1171d1f2bc57354635
+    section: 1
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    modification_date: 1550921882
+    publication_date: 1550920180
+    always_available: true
+    attributes:
+        name: ride-2
+        photo:
+            path: '/var/www/html/project/ezplatform/web/var/site/storage/images/2/9/1/0/192-1-eng-GB/Capture d’écran de 2018-10-18 20-15-21.png'
+            filename: 'Capture d’écran de 2018-10-18 20-15-21.png'
+            alternativeText: ''
+        description:
+            xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" xmlns:ezxhtml=\"http://ez.no/xmlns/ezpublish/docbook/xhtml\" xmlns:ezcustom=\"http://ez.no/xmlns/ezpublish/docbook/custom\" version=\"5.0-variant ezpublish-1.0\"><para>azdadz</para></section>\n"
+        starting_point:
+            latitude: -57.186998
+            longitude: -89.273443
+            address: ''
+        ending_point:
+            latitude: -34.452963
+            longitude: -84.011722
+            address: ''
+        length: 5
+        landmarks:
+            destinationContentIds: {  }

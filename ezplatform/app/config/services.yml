@@ -19,7 +19,7 @@ services:
         exclude: '../../src/AppBundle/{Entity,Repository}'
 
     app.controller.contactform:
-        class: AppBundle\Controller\ContactFormController
+        class: AppBundle\Controller\ContactController
         public: true
         arguments:
             - '@form.factory'

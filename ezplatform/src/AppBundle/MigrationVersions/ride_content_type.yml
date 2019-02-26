@@ -1,0 +1,119 @@
+-
+    type: content_type
+    mode: create
+    content_type_group: Content
+    identifier: ride
+    name:
+        eng-GB: Ride
+    description:
+        eng-GB: 'A Ride is a route of a bike trip'
+    name_pattern: '<name>'
+    url_name_pattern: ''
+    is_container: false
+    lang: eng-GB
+    attributes:
+        -
+            identifier: name
+            type: ezstring
+            name:
+                eng-GB: Name
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 1
+            field-settings: {  }
+            validator-configuration:
+                StringLengthValidator: { maxStringLength: null, minStringLength: null }
+        -
+            identifier: photo
+            type: ezimage
+            name:
+                eng-GB: Photo
+            description: {  }
+            required: false
+            searchable: false
+            info-collector: false
+            disable-translation: true
+            category: content
+            position: 2
+            field-settings: {  }
+            validator-configuration:
+                FileSizeValidator: { maxFileSize: null }
+        -
+            identifier: description
+            type: ezrichtext
+            name:
+                eng-GB: Description
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 3
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: starting_point
+            type: ezgmaplocation
+            name:
+                eng-GB: 'Starting point'
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: true
+            category: content
+            position: 4
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: ending_point
+            type: ezgmaplocation
+            name:
+                eng-GB: 'Endoing point'
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: true
+            category: content
+            position: 5
+            field-settings: {  }
+            validator-configuration: {  }
+        -
+            identifier: length
+            type: ezinteger
+            name:
+                eng-GB: Length
+            description: {  }
+            required: true
+            searchable: true
+            info-collector: false
+            disable-translation: true
+            category: content
+            position: 6
+            field-settings: {  }
+            validator-configuration:
+                IntegerValueValidator: { minIntegerValue: null, maxIntegerValue: null }
+        -
+            identifier: landmarks
+            type: ezobjectrelationlist
+            name:
+                eng-GB: Landmarks
+            description: {  }
+            required: false
+            searchable: true
+            info-collector: false
+            disable-translation: false
+            category: content
+            position: 7
+            field-settings:
+                selectionMethod: 0
+                selectionDefaultLocation: null
+                selectionContentTypes: [landmark]
+            validator-configuration:
+                RelationListValueValidator: { selectionLimit: 0 }

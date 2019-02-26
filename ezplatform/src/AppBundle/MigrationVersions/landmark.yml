@@ -1,0 +1,33 @@
+-
+    type: content
+    mode: create
+    content_type: landmark
+    parent_location: 57
+    priority: 0
+    is_hidden: false
+    sort_field: published
+    sort_order: DESC
+    remote_id: 6a1e4f306e888d2bb5e26ebe2b8bb6b8
+    location_remote_id: 3f011ae491bf43074871432fd524ffd5
+    section: 1
+    object_states: {  }
+    lang: eng-GB
+    owner: 14
+    modification_date: 1550932807
+    publication_date: 1550928150
+    always_available: true
+    attributes:
+        name: Tunisia
+        description:
+            xml: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<section xmlns=\"http://docbook.org/ns/docbook\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"5.0-variant ezpublish-1.0\"/>\n"
+        photo:
+            destinationContentId: 59
+            alternativeText: null
+        location:
+            latitude: 33.843941
+            longitude: 9.400138
+            address: Tunisia
+        image:
+            path: '/var/www/html/project/ezplatform/web/var/site/storage/images/3/1/2/0/213-3-eng-GB/Capture d’écran de 2018-10-04 16-23-45.png'
+            filename: 'Capture d’écran de 2018-10-04 16-23-45.png'
+            alternativeText: ''

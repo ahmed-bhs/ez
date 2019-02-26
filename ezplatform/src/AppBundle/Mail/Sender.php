@@ -2,11 +2,11 @@
 
 namespace AppBundle\Mail;
 
-use AppBundle\Entity\Contact;
+use AppBundle\Model\Contact;
 use Symfony\Bundle\TwigBundle\TwigEngine as Templating;
 use Symfony\Component\Translation\TranslatorInterface;
 use Swift_Mailer;
-use Swift_Message;
+
 
 class Sender
 {
@@ -52,16 +52,12 @@ class Sender
     public function send(Contact $contact)
     {
         $title = $this->translator->trans('You have a new message from %from%', ['%from%' => $contact->getFrom()]);
-        $message = Swift_Message::newInstance($title, $contact->getMessage())
+        $message = (new \Swift_Message($title, $contact->getMessage()))
             ->setFrom($this->senderEmail)
             ->setTo($this->recipientEmail)
             ->setReplyTo($this->recipientEmail)
-            ->setBody(
-                $this->templating->render('/themes/tastefulplanet/mail/contact.html.twig', [
-                    'contact' => $contact
-                ])
-            );
-
+            ->setBody('aaa')
+            ;
         $this->mailer->send($message);
     }
 }

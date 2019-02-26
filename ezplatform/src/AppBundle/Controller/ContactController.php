@@ -2,15 +2,15 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Form\ContactType;
+use AppBundle\Mail\Sender;
+use eZ\Publish\Core\MVC\Symfony\View\View;
+use Symfony\Bundle\TwigBundle\TwigEngine as Templating;
 use Symfony\Component\Form\FormFactory;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Bundle\TwigBundle\TwigEngine as Templating;
 use Symfony\Component\Routing\Router;
-use eZ\Publish\Core\MVC\Symfony\View\View;
-use AppBundle\Form\ContactType;
-use AppBundle\Mail\Sender;
 
 class ContactController
 {
@@ -47,10 +47,10 @@ class ContactController
     /**
      * Displays contact form and sends e-mail message when using POST request.
      *
-     * @param \eZ\Publish\Core\MVC\Symfony\View\View $view
-     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param View $view
+     * @param Request $request
      *
-     * @return \eZ\Publish\Core\MVC\Symfony\View\View|\Symfony\Component\HttpFoundation\RedirectResponse
+     * @return View|\Symfony\Component\HttpFoundation\RedirectResponse
      */
     public function showContactFormAction(View $view, Request $request)
     {
